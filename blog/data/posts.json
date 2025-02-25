@@ -1,0 +1,40 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Como a Inteligência Artificial está Transformando os Negócios",
+            "excerpt": "Descubra as principais tendências e aplicações da IA no mundo empresarial e como ela está revolucionando diferentes setores.",
+            "content": "<p>A Inteligência Artificial (IA) está revolucionando a forma como as empresas operam e se relacionam com seus clientes. Neste artigo, exploraremos as principais tendências e aplicações da IA no ambiente empresarial.</p><h2>1. Automação de Processos</h2><p>A IA permite automatizar tarefas repetitivas...</p>",
+            "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+            "category": "Tecnologia",
+            "date": "2024-03-15",
+            "author": {
+                "name": "João Silva",
+                "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+            },
+            "tags": ["IA", "Inovação", "Tecnologia"],
+            "views": 1250
+        },
+        {
+            "id": 2,
+            "title": "Tendências de Design Web para 2024",
+            "excerpt": "Conheça as principais tendências de design que estão dominando a web neste ano e como implementá-las em seus projetos.",
+            "content": "<p>O design web está em constante evolução...</p>",
+            "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+            "category": "Design",
+            "date": "2024-03-14",
+            "author": {
+                "name": "Maria Santos",
+                "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+            },
+            "tags": ["Design", "Web", "UI/UX"],
+            "views": 980
+        }
+    ],
+    "categories": [
+        { "name": "Tecnologia", "count": 12 },
+        { "name": "Design", "count": 6 },
+        { "name": "Marketing", "count": 5 },
+        { "name": "Desenvolvimento", "count": 8 }
+    ]
+} 

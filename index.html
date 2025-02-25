@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Moderno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://img.logoipsum.com/219.svg" alt="Logo da Empresa" style="background: transparent;">
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll">Transformando Ideias em Realidade</h1>
+                <p class="animate-on-scroll">Soluções inovadoras para impulsionar seu negócio ao próximo nível</p>
+                <div class="cta-buttons animate-on-scroll">
+                    <button class="btn btn-primary">Comece Agora</button>
+                    <button class="btn btn-secondary">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-text animate-on-scroll">
+                    <h3>Nossa História</h3>
+                    <p>Somos uma empresa inovadora dedicada a transformar ideias em realidade digital. Com anos de experiência no mercado, nossa equipe de especialistas trabalha incansavelmente para entregar soluções que impulsionam o sucesso dos nossos clientes.</p>
+                    <p>Nossa missão é proporcionar excelência em cada projeto, combinando criatividade, tecnologia e estratégia para alcançar resultados extraordinários.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="number" data-target="150">0</span>
+                            <span class="label">Projetos Concluídos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number" data-target="50">0</span>
+                            <span class="label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number" data-target="10">0</span>
+                            <span class="label">Anos de Experiência</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Nossa Equipe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card animate-on-scroll">
+                    <div class="icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criamos sites modernos e responsivos...</p>
+                    <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                </div>
+                <div class="servico-card animate-on-scroll">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Apps Mobile</h3>
+                    <p>Desenvolvimento de aplicativos nativos...</p>
+                    <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                </div>
+                <div class="servico-card animate-on-scroll">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias completas de marketing...</p>
+                    <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title">Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Projeto 1">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Platform</h3>
+                        <p>Plataforma completa de e-commerce com dashboard administrativo</p>
+                        <div class="tech-stack">
+                            <span class="tech">React</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">MongoDB</span>
+                        </div>
+                    </div>
+                    <a href="#" class="portfolio-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Projeto 2">
+                    <div class="portfolio-overlay">
+                        <h3>App Mobile</h3>
+                        <p>Aplicativo de delivery com geolocalização em tempo real</p>
+                        <div class="tech-stack">
+                            <span class="tech">Flutter</span>
+                            <span class="tech">Firebase</span>
+                            <span class="tech">Maps API</span>
+                        </div>
+                    </div>
+                    <a href="#" class="portfolio-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80" alt="Projeto 3">
+                    <div class="portfolio-overlay">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Sistema de análise de dados com visualizações interativas</p>
+                        <div class="tech-stack">
+                            <span class="tech">Vue.js</span>
+                            <span class="tech">D3.js</span>
+                            <span class="tech">Python</span>
+                        </div>
+                    </div>
+                    <a href="#" class="portfolio-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info animate-on-scroll">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>Rua Example, 123 - São Paulo</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(11) 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contato@exemplo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form animate-on-scroll">
+                    <div class="form-group">
+                        <input type="text" name="nome" required>
+                        <label>Seu Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required>
+                        <label>Seu Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" required></textarea>
+                        <label>Sua Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="https://img.logoipsum.com/219.svg" alt="Logo">
+                    <p>Transformando ideias em soluções digitais inovadoras. Conte conosco para impulsionar seu negócio.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@empresa.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Example, 123 - São Paulo</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title - Blog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://img.logoipsum.com/219.svg" alt="Logo da Empresa" style="background: transparent;">
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html#sobre">Sobre</a></li>
+                    <li><a href="../index.html#servicos">Serviços</a></li>
+                    <li><a href="../index.html#portfolio">Portfólio</a></li>
+                    <li><a href="/blog" class="active">Blog</a></li>
+                    <li><a href="../index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="post-main">
+        <article class="post-article">
+            <div class="post-header">
+                <div class="container">
+                    <div class="post-meta">
+                        <span class="post-category">Categoria</span>
+                        <span class="post-date">Data</span>
+                    </div>
+                    <h1 class="post-title">Título do Post</h1>
+                    <div class="post-author">
+                        <img src="author-avatar.jpg" alt="Autor">
+                        <div class="author-info">
+                            <span class="author-name">Nome do Autor</span>
+                            <span class="read-time">Tempo de leitura: 5 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-featured-image">
+                <img src="post-image.jpg" alt="Imagem do Post">
+            </div>
+
+            <div class="container">
+                <div class="post-content">
+                    <!-- Conteúdo do post será inserido via JavaScript -->
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-tags">
+                        <span>Tags:</span>
+                        <a href="#">tecnologia</a>
+                        <a href="#">desenvolvimento</a>
+                        <a href="#">web</a>
+                    </div>
+
+                    <div class="post-share">
+                        <span>Compartilhe:</span>
+                        <a href="#" class="share-button facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="share-button twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="share-button linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="related-posts">
+                    <h3>Posts Relacionados</h3>
+                    <div class="related-posts-grid">
+                        <!-- Posts relacionados serão inseridos via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- ... código do footer ... -->
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="blog.js"></script>
+    <script src="post.js"></script>
+</body>
+</html> 

@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1740354343609,
+      "title": "teste",
+      "excerpt": "teste",
+      "content": "<p>teste</p>",
+      "category": "Tecnologia",
+      "tags": [
+        "teste"
+      ],
+      "image": "/uploads/1740354343606.png",
+      "date": "2025-02-23T23:45:43.609Z",
+      "views": 0,
+      "author": {
+        "name": "Admin",
+        "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+      }
+    }
+  ]
+}

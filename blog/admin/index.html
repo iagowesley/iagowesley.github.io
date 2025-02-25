@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Blog</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+</head>
+<body class="admin-body">
+    <nav class="admin-nav">
+        <ul class="admin-menu">
+            <li>
+                <a href="#" class="active" data-section="posts">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-section="categories">
+                    <i class="fas fa-tags"></i>
+                    <span>Categorias</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sair</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="admin-main">
+        <div class="admin-header">
+            <h1>Gerenciar Posts</h1>
+            <button class="btn btn-primary" id="new-post">
+                <i class="fas fa-plus"></i> Novo Post
+            </button>
+        </div>
+
+        <div class="admin-content">
+            <!-- Lista de Posts -->
+            <div class="posts-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th>Visualizações</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="posts-table">
+                        <!-- Posts serão inseridos aqui -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Seção de Categorias -->
+            <div class="categories-section" style="display: none;">
+                <div class="categories-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Total de Posts</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="categories-table">
+                            <!-- Categorias serão inseridas aqui -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="category-form">
+                    <h3>Adicionar Categoria</h3>
+                    <form id="category-form">
+                        <div class="form-group">
+                            <label for="category-name">Nome da Categoria</label>
+                            <input type="text" id="category-name" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Formulário de Post -->
+            <div class="post-form" style="display: none;">
+                <div class="form-header">
+                    <h2>Novo Post</h2>
+                    <button type="button" class="btn btn-secondary" id="cancel-post">
+                        <i class="fas fa-times"></i> Cancelar
+                    </button>
+                </div>
+
+                <form id="post-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="post-title">Título</label>
+                            <input type="text" id="post-title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post-category">Categoria</label>
+                            <select id="post-category" required>
+                                <option value="">Selecione uma categoria</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="post-excerpt">Resumo</label>
+                        <textarea id="post-excerpt" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="post-content">Conteúdo</label>
+                        <textarea id="post-content"></textarea>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="post-tags">Tags (separadas por vírgula)</label>
+                            <input type="text" id="post-tags" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post-image">Imagem Destacada</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="post-image" accept="image/*">
+                                <label for="post-image" class="file-label">
+                                    <i class="fas fa-upload"></i>
+                                    <span>Escolher arquivo</span>
+                                </label>
+                            </div>
+                            <div id="image-preview" class="image-preview" style="display: none;">
+                                <img src="" alt="Preview da imagem">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Publicar Post
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html> 
